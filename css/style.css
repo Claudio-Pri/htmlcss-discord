@@ -79,6 +79,7 @@ header .header-top nav ul>li>a {
 }
 
 .header-bottom {
+    background-image: url(/img/jumbo.png);
     padding: 40px 0;
 }
 
