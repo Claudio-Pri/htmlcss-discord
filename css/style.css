@@ -1,0 +1,192 @@
+/* 
+    RESET
+*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+html {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* 
+    GENERAL
+*/
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.flex-container {
+    display: flex;
+}
+
+/* HEADER */
+header div.container {}
+
+header {
+    background-color: aquamarine;
+}
+
+nav.flex-container {
+    /* line-height per debug */
+    line-height: 50px;
+    align-items: center;
+}
+
+.nav-bar {
+    text-align: center;
+}
+
+.login-button {
+    text-align: end;
+}
+
+/* MAIN */
+.item-25 {
+    width: 25%;
+}
+
+.item-50 {
+    width: 50%;
+}
+
+.hero-image {
+    width: 70%;
+    margin: 0 auto;
+}
+
+.first-section aside {
+    width: 65%;
+}
+
+.first-section div {
+    width: 35%;
+}
+
+.second-section aside {
+    width: 65%;
+    order: 1;
+}
+
+.second-section div {
+    width: 35%;
+}
+
+.footer-left-side {
+    width: 30%;
+}
+
+.footer-right-side {
+    width: 70%;
+}
+
+.footer-section-1 {
+    margin-bottom: 2px;
+}
+
+.footer-section-2 .flex-container {
+    justify-content: space-between;
+}
+
+.footer-section-2 .flex-container .flex-item {
+    padding: 5px;
+}
+
+
+
+/* DEBUG */
+.debug nav>* {
+    background-color: #AE851F;
+    min-height: 50px;
+    border: 2px dashed blue;
+
+}
+
+.debug header {
+    background-color: #9BC1CD;
+    min-height: 50px;
+}
+
+.debug .hero-image {
+    background-color: pink;
+    border: 2px dashed red;
+    min-height: 250px;
+}
+
+.debug header .container.sub-section {
+
+    min-height: 100px;
+
+}
+
+.debug .first-section>aside {
+    background-color: lightseagreen;
+    min-height: 300px;
+}
+
+.debug .first-section div {
+    background-color: salmon;
+    min-height: 300px;
+}
+
+.debug .bg-dark {
+    background-color: lightgrey;
+}
+
+.debug .bg-darker {
+    background-color: #23272A;
+}
+
+.debug .bg-light {
+    background-color: white;
+}
+
+.debug .second-section>aside {
+    background-color: lightseagreen;
+    min-height: 300px;
+}
+
+.debug .second-section div {
+    background-color: salmon;
+    min-height: 300px;
+}
+
+
+.debug .main-end {
+    background-color: green;
+    min-height: 800px;
+
+}
+
+.debug footer .footer-left-side {
+    border: 2px dashed black;
+    min-height: 400px;
+    background-color: salmon;
+}
+
+
+
+.debug footer .footer-right-side .item-25 {
+    border: 2px dashed white;
+    background-color: aqua;
+
+}
+
+footer .footer-section-2 .flex-item {
+    min-height: 30px;
+    background-color: salmon;
+    border: 1px dashed black;
+
+}
+
+footer .footer-section-2 .flex-container {
+
+
+    min-height: 30px;
+
+}
