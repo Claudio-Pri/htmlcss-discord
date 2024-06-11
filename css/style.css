@@ -7,7 +7,6 @@
     box-sizing: border-box;
 }
 
-
 html {
     font-family: Arial, Helvetica, sans-serif;
 }
@@ -18,175 +17,175 @@ html {
 .container {
     max-width: 1000px;
     margin: 0 auto;
-    padding: 20px;
 }
 
-.flex-container {
+.my-row {
     display: flex;
+    flex-wrap: wrap;
 }
+
+.my-col-1-6 {
+    width: calc(100% / 6);
+}
+
+.my-col-2-3 {
+    width: calc((100% / 3) * 2);
+}
+
+.my-col-3-5 {
+    width: calc((100% / 5) * 3);
+}
+
+.my-col-2-5 {
+    width: calc((100% / 5) * 2);
+}
+
+.my-col-1-4 {
+    width: calc(100% / 4);
+}
+
+.my-col-1-3 {
+    width: calc(100% / 3);
+}
+
+.my-col-2-3 {
+    width: calc((100% / 3) * 2);
+}
+
+
+.text-align-right {
+    text-align: right;
+}
+
+
+
 
 /* HEADER */
-header div.container {}
 
-header {
-    background-color: aquamarine;
+header .header-top {
+
+    padding: 10px 0;
 }
 
-nav.flex-container {
-    /* line-height per debug */
-    line-height: 50px;
-    align-items: center;
+header .header-top nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
 }
 
-.nav-bar {
-    text-align: center;
+header .header-top nav ul>li>a {
+    display: inline-block;
+    padding: 0 10px;
 }
 
-.login-button {
-    text-align: end;
+.header-bottom {
+    padding: 40px 0;
 }
 
-/* MAIN */
-.item-25 {
-    width: 25%;
-}
-
-.item-50 {
-    width: 50%;
-}
-
-.hero-image {
-    width: 70%;
+.header-bottom .jumbo {
+    width: 80%;
     margin: 0 auto;
 }
 
-.first-section aside {
-    width: 65%;
+/* MAIN */
+main>section {
+    padding: 40px 0;
 }
 
-.first-section div {
-    width: 35%;
-}
-
-.second-section aside {
-    width: 65%;
-    order: 1;
-}
-
-.second-section div {
-    width: 35%;
-}
-
-.footer-left-side {
-    width: 30%;
-}
-
-.footer-right-side {
-    width: 70%;
-}
-
-.footer-section-1 {
-    margin-bottom: 2px;
-}
-
-.footer-section-2 .flex-container {
-    justify-content: space-between;
-}
-
-.footer-section-2 .flex-container .flex-item {
-    padding: 5px;
-}
-
-
-
-/* DEBUG */
-.debug nav>* {
-    background-color: #AE851F;
-    min-height: 50px;
-    border: 2px dashed blue;
-
-}
-
-.debug header {
-    background-color: #9BC1CD;
-    min-height: 50px;
-}
-
-.debug .hero-image {
-    background-color: pink;
-    border: 2px dashed red;
-    min-height: 250px;
-}
-
-.debug header .container.sub-section {
-
-    min-height: 100px;
-
-}
-
-.debug .first-section>aside {
-    background-color: lightseagreen;
-    min-height: 300px;
-}
-
-.debug .first-section div {
-    background-color: salmon;
-    min-height: 300px;
-}
-
-.debug .bg-dark {
+main>section:nth-child(even) {
     background-color: lightgrey;
 }
 
-.debug .bg-darker {
+/* FOOTER */
+
+footer {
     background-color: #23272A;
 }
 
-.debug .bg-light {
-    background-color: white;
+footer .footer-top {
+    padding: 20px 0;
 }
 
-.debug .second-section>aside {
+footer hr {
+    border-color: white;
+}
+
+footer .footer-bottom {
+    padding-top: 20px;
+}
+
+footer .last-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 0;
+    background-color: aquamarine;
+}
+
+footer .last-container>* {
+
+    padding: 5px 10px;
+    background-color: pink;
+}
+
+/* DEBUG */
+
+.debug .container {
+    /* background-color: antiquewhite; */
+    border: 3px dashed red;
+}
+
+.debug .header-top {
     background-color: lightseagreen;
-    min-height: 300px;
+    border: 3px dashed blue;
 }
 
-.debug .second-section div {
-    background-color: salmon;
-    min-height: 300px;
-}
-
-
-.debug .main-end {
-    background-color: green;
-    min-height: 800px;
+.debug header .header-top>.container>.my-row {
+    background-color: gold;
 
 }
 
-.debug footer .footer-left-side {
-    border: 2px dashed black;
-    min-height: 400px;
-    background-color: salmon;
-}
-
-
-
-.debug footer .footer-right-side .item-25 {
-    border: 2px dashed white;
-    background-color: aqua;
-
-}
-
-footer .footer-section-2 .flex-item {
-    min-height: 30px;
-    background-color: salmon;
+.debug header .header-top>.container>.my-row>* {
     border: 1px dashed black;
-
+    padding: 10px;
 }
 
-footer .footer-section-2 .flex-container {
+.debug .header-bottom {
+    background-color: blue;
+    border: 3px dashed purple;
+}
 
+.debug .header-bottom .jumbo {
+    background-color: pink;
+    border: 3px dashed purple;
+    min-height: 400px;
+}
 
-    min-height: 30px;
+.debug main section .my-row .my-col-3-5 {
+    background-color: blue;
+    border: 3px dashed black;
+    min-height: 300px;
+}
 
+.debug main section .my-row .my-col-2-5 {
+    background-color: salmon;
+    border: 3px dashed black;
+    min-height: 300px;
+}
+
+.debug .box-green {
+    background-color: green;
+    min-height: 500px;
+    border: 3px dashed black;
+}
+
+.debug footer .footer-top .container>.my-row>* {
+    background-color: orange;
+    min-height: 300px;
+    border: 2px dashed black;
+}
+
+.debug footer .footer-top .container>.my-row .my-row>* {
+    background-color: teal;
+    min-height: 300px;
+    border: 2px dashed white;
 }
