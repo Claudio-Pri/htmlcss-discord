@@ -8,7 +8,7 @@
 }
 
 html {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: "Roboto", sans-serif;
 }
 
 /* 
@@ -53,18 +53,34 @@ html {
 }
 
 
-.text-align-right {
-    text-align: right;
+
+
+.button {
+    text-decoration: none;
+    padding: 7px 10px;
+    border-radius: 20px;
 }
 
+.but-bg-white {
+    background-color: white;
+    color: black;
+}
 
 
 
 /* HEADER */
 
-header .header-top {
+header {
+    color: white;
+}
 
+header .header-top {
+    background-color: #255EE9;
     padding: 10px 0;
+}
+
+header .header-top>.container>.my-row>* {
+    padding: 10px;
 }
 
 header .header-top nav ul {
@@ -74,13 +90,30 @@ header .header-top nav ul {
 }
 
 header .header-top nav ul>li>a {
+    color: white;
     display: inline-block;
-    padding: 0 10px;
+    padding: 0 20px;
+    text-decoration: none;
+}
+
+header .header-top .my-col-2-3 {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+header .header-top .my-col-1-6.text-align-right {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+
 }
 
 .header-bottom {
-    background-image: url(/img/jumbo.png);
-    padding: 40px 0;
+    background-image: url('../img/jumbo.png');
+    background-position: center;
+    background-size: cover;
+    padding: 100px 0;
 }
 
 .header-bottom .jumbo {
@@ -130,17 +163,17 @@ footer .last-container>* {
 
 /* DEBUG */
 
-.debug .container {
-    /* background-color: antiquewhite; */
+/* .debug .container {
+    background-color: antiquewhite;
     border: 3px dashed red;
-}
+} */
 
-.debug .header-top {
+/* .debug .header-top {
     background-color: lightseagreen;
     border: 3px dashed blue;
-}
+} */
 
-.debug header .header-top>.container>.my-row {
+/* .debug header .header-top>.container>.my-row {
     background-color: gold;
 
 }
@@ -148,12 +181,12 @@ footer .last-container>* {
 .debug header .header-top>.container>.my-row>* {
     border: 1px dashed black;
     padding: 10px;
-}
+} */
 
-.debug .header-bottom {
+/* .debug .header-bottom {
     background-color: blue;
     border: 3px dashed purple;
-}
+} */
 
 .debug .header-bottom .jumbo {
     background-color: pink;
