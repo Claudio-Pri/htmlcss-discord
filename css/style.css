@@ -53,17 +53,20 @@ html {
 }
 
 
-
-
 .button {
     text-decoration: none;
-    padding: 7px 10px;
+    padding: 10px 15px;
     border-radius: 20px;
 }
 
 .but-bg-white {
     background-color: white;
-    color: black;
+    color: #23272A;
+}
+
+.but-bg-dark {
+    background-color: #23272A;
+    color: white;
 }
 
 
@@ -119,6 +122,34 @@ header .header-top .my-col-1-6.text-align-right {
 .header-bottom .jumbo {
     width: 80%;
     margin: 0 auto;
+    text-align: center;
+}
+
+.header-bottom .jumbo h2 {
+    font-size: 50px;
+    font-weight: bold;
+    padding: 20px 0;
+}
+
+.header-bottom .jumbo p {
+    font-size: 18px;
+
+    padding: 20px 0;
+}
+
+.header-bottom .jumbo .action-buttons {
+    padding: 40px 0;
+    font-size: large;
+
+}
+
+.header-bottom .jumbo .action-buttons>.but-bg-white {
+    margin-right: 20px;
+}
+
+.header-bottom .jumbo .action-buttons>.but-bg-white span {
+    font-weight: 900;
+    font-size: larger;
 }
 
 /* MAIN */
@@ -188,12 +219,12 @@ footer .last-container>* {
     border: 3px dashed purple;
 } */
 
-.debug .header-bottom .jumbo {
+/* .debug .header-bottom .jumbo {
     background-color: pink;
     border: 3px dashed purple;
     min-height: 400px;
 }
-
+*/
 .debug main section .my-row .my-col-3-5 {
     background-color: blue;
     border: 3px dashed black;
